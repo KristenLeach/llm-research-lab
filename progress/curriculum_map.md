@@ -114,24 +114,36 @@ Detailed learning objectives and scope for each module.
 ## Module 10 — Analysis of Model Outputs
 **Goal:** Load, inspect, and analyze batches of model responses.
 
-Topics: loading output files, computing statistics, identifying patterns, flagging heuristics
-AI Research Connection: Analyzing real LLM output datasets
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_loading_and_inspecting | json.load, list comprehensions, flag_rate, unique model list | First-pass inspection of a batch of model outputs |
+| 02_per_model_analysis | pd.DataFrame, groupby, .size(), .mean(), .round(), per-model stats | Comparing flag rates and response lengths across model versions |
+| 03_heuristics_and_patterns | str.contains, short-response filter, sort_values, boolean indexing | Building fast imperfect rules to surface suspicious outputs |
+| 04_mini_project | End-to-end: overall_stats, model_scorecard, pattern finding, findings dict | Full analysis pipeline from raw JSON to structured research findings |
 
 ---
 
 ## Module 11 — Prompt/Output Datasets
 **Goal:** Create and manage small datasets of prompts and model outputs.
 
-Topics: dataset structure, annotation schemas, versioning, sampling strategies
-AI Research Connection: Building eval datasets, annotation workflows
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_dataset_structure | Annotation schemas, JSONL format, json.dumps/loads, write/read JSONL | Defining and building structured eval dataset entries |
+| 02_sampling_strategies | random.sample, stratified sampling by category, adversarial examples | Building representative, diverse eval sets that probe model weaknesses |
+| 03_versioning_and_formats | JSON↔JSONL↔CSV conversion, csv.DictWriter/DictReader, dataset cards | Packaging and documenting datasets for reproducible research |
+| 04_mini_project | Full dataset: schema → 9+ entries → JSONL → dataset card | End-to-end eval dataset creation matching real AI safety lab practices |
 
 ---
 
 ## Module 12 — Safety-Oriented Classification & Evaluation
 **Goal:** Apply classification logic to safety-relevant model outputs.
 
-Topics: rule-based classifiers, keyword matching, threshold tuning, precision/recall
-AI Research Connection: Detecting harmful content, jailbreaks, misinformation
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_rule_based_classifiers | Keyword trigger lists, flag_response(), confusion matrix (TP/FP/FN/TN) | Building auditable first-line safety filters for model outputs |
+| 02_precision_recall_tradeoff | Precision, recall, F1 formulas; asymmetric costs of FP vs FN in safety | Reasoning about over- vs under-flagging tradeoffs in deployment |
+| 03_evaluating_classifiers | classifier v1 vs v2 comparison, accuracy caveat, which is better for safety | Systematic classifier evaluation to choose the right safety threshold |
+| 04_mini_project | compute_metrics() helper, both classifiers, comparison dict, findings summary | Full safety classifier pipeline: build → evaluate → compare → report |
 
 ---
 
