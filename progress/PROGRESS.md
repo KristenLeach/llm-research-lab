@@ -45,7 +45,10 @@ Track your progress through the curriculum here. Update this as you complete not
 
 ## Module 07 — Environments & Reproducibility
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_virtual_environments.ipynb`
+- [ ] `02_package_management.ipynb`
+- [ ] `03_seeds_and_reproducibility.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 08 — Statistics for Experiments
 

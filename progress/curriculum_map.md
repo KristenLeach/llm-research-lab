@@ -78,8 +78,12 @@ Detailed learning objectives and scope for each module.
 ## Module 07 — Environments, Dependencies, Reproducibility
 **Goal:** Understand how Python environments work; make work reproducible.
 
-Topics: venv, uv, pyproject.toml, pinning versions, seeds for randomness, README-driven reproducibility
-AI Research Connection: Sharing experiments, reproducing results, avoiding "works on my machine" problems
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_virtual_environments | venv isolation, uv venv, python -m venv, activate/deactivate, sys.executable, importlib.metadata | Understanding why experiment environments must be isolated |
+| 02_package_management | uv pip install, pip install, version specifiers (==, >=, ~=), requirements.txt, uv pip freeze, pyproject.toml overview | Pinning exact dependencies so results can be reproduced |
+| 03_seeds_and_reproducibility | random.seed(), np.random.seed(), default_rng(), SEED constant, limits of seeding (GPU, APIs) | Making stochastic code deterministic: train/test splits, sampling, weight initialization |
+| 04_mini_project | analyze_scores.py with seeds, requirements.txt, REPRODUCE.md, two-run identity check | Full reproducible experiment scaffold matching real AI research practices |
 
 ---
 
