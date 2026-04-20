@@ -114,8 +114,12 @@ Detailed learning objectives and scope for each module.
 ## Module 10 — Analysis of Model Outputs
 **Goal:** Load, inspect, and analyze batches of model responses.
 
-Topics: loading output files, computing statistics, identifying patterns, flagging heuristics
-AI Research Connection: Analyzing real LLM output datasets
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_loading_and_inspecting | json.load, list comprehensions, flag_rate, unique model list | First-pass inspection of a batch of model outputs |
+| 02_per_model_analysis | pd.DataFrame, groupby, .size(), .mean(), .round(), per-model stats | Comparing flag rates and response lengths across model versions |
+| 03_heuristics_and_patterns | str.contains, short-response filter, sort_values, boolean indexing | Building fast imperfect rules to surface suspicious outputs |
+| 04_mini_project | End-to-end: overall_stats, model_scorecard, pattern finding, findings dict | Full analysis pipeline from raw JSON to structured research findings |
 
 ---
 

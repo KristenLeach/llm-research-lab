@@ -66,7 +66,10 @@ Track your progress through the curriculum here. Update this as you complete not
 
 ## Module 10 — Model Output Analysis
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_loading_and_inspecting.ipynb`
+- [ ] `02_per_model_analysis.ipynb`
+- [ ] `03_heuristics_and_patterns.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 11 — Prompt/Output Datasets
 
