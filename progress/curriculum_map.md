@@ -138,8 +138,12 @@ Detailed learning objectives and scope for each module.
 ## Module 12 — Safety-Oriented Classification & Evaluation
 **Goal:** Apply classification logic to safety-relevant model outputs.
 
-Topics: rule-based classifiers, keyword matching, threshold tuning, precision/recall
-AI Research Connection: Detecting harmful content, jailbreaks, misinformation
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_rule_based_classifiers | Keyword trigger lists, flag_response(), confusion matrix (TP/FP/FN/TN) | Building auditable first-line safety filters for model outputs |
+| 02_precision_recall_tradeoff | Precision, recall, F1 formulas; asymmetric costs of FP vs FN in safety | Reasoning about over- vs under-flagging tradeoffs in deployment |
+| 03_evaluating_classifiers | classifier v1 vs v2 comparison, accuracy caveat, which is better for safety | Systematic classifier evaluation to choose the right safety threshold |
+| 04_mini_project | compute_metrics() helper, both classifiers, comparison dict, findings summary | Full safety classifier pipeline: build → evaluate → compare → report |
 
 ---
 

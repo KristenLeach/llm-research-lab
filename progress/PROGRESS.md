@@ -80,7 +80,10 @@ Track your progress through the curriculum here. Update this as you complete not
 
 ## Module 12 — Safety-Oriented Evaluation
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_rule_based_classifiers.ipynb`
+- [ ] `02_precision_recall_tradeoff.ipynb`
+- [ ] `03_evaluating_classifiers.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 13 — Error Analysis
 
