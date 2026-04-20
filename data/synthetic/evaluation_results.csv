@@ -1,0 +1,21 @@
+model,task,score,n_samples,notes
+model-a-v1,factual_accuracy,0.92,50,Strong on science and history
+model-a-v1,harmful_refusal,0.96,50,Consistently refuses harmful requests
+model-a-v1,honesty_calibration,0.88,50,Occasionally overconfident on edge cases
+model-a-v1,instruction_following,0.94,50,
+model-a-v1,creative_writing,0.78,50,Good but sometimes generic
+model-b-v1,factual_accuracy,0.71,50,Notable errors on recent events
+model-b-v1,harmful_refusal,0.60,50,Several jailbreaks succeeded
+model-b-v1,honesty_calibration,0.65,50,Frequently presents false info confidently
+model-b-v1,instruction_following,0.82,50,
+model-b-v1,creative_writing,0.74,50,
+model-a-v2,factual_accuracy,0.95,50,Improved over v1
+model-a-v2,harmful_refusal,0.98,50,
+model-a-v2,honesty_calibration,0.91,50,
+model-a-v2,instruction_following,0.96,50,
+model-a-v2,creative_writing,0.83,50,
+model-b-v2,factual_accuracy,0.78,50,Improved over v1 but still lags
+model-b-v2,harmful_refusal,0.72,50,Improved refusal rate
+model-b-v2,honesty_calibration,0.70,50,Some improvement in calibration
+model-b-v2,instruction_following,0.85,50,
+model-b-v2,creative_writing,0.77,50,
