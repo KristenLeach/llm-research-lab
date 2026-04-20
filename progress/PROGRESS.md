@@ -73,7 +73,10 @@ Track your progress through the curriculum here. Update this as you complete not
 
 ## Module 11 — Prompt/Output Datasets
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_dataset_structure.ipynb`
+- [ ] `02_sampling_strategies.ipynb`
+- [ ] `03_versioning_and_formats.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 12 — Safety-Oriented Evaluation
 

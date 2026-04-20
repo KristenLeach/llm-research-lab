@@ -126,8 +126,12 @@ Detailed learning objectives and scope for each module.
 ## Module 11 — Prompt/Output Datasets
 **Goal:** Create and manage small datasets of prompts and model outputs.
 
-Topics: dataset structure, annotation schemas, versioning, sampling strategies
-AI Research Connection: Building eval datasets, annotation workflows
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_dataset_structure | Annotation schemas, JSONL format, json.dumps/loads, write/read JSONL | Defining and building structured eval dataset entries |
+| 02_sampling_strategies | random.sample, stratified sampling by category, adversarial examples | Building representative, diverse eval sets that probe model weaknesses |
+| 03_versioning_and_formats | JSON↔JSONL↔CSV conversion, csv.DictWriter/DictReader, dataset cards | Packaging and documenting datasets for reproducible research |
+| 04_mini_project | Full dataset: schema → 9+ entries → JSONL → dataset card | End-to-end eval dataset creation matching real AI safety lab practices |
 
 ---
 
