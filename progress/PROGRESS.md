@@ -52,11 +52,17 @@ Track your progress through the curriculum here. Update this as you complete not
 
 ## Module 08 — Statistics for Experiments
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_descriptive_stats.ipynb`
+- [ ] `02_distributions_and_spread.ipynb`
+- [ ] `03_comparing_groups.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 09 — Evaluation Methodology
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_eval_design.ipynb`
+- [ ] `02_metrics_and_baselines.ipynb`
+- [ ] `03_inter_rater_agreement.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 10 — Model Output Analysis
 

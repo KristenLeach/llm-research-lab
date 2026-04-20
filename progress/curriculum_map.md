@@ -90,16 +90,24 @@ Detailed learning objectives and scope for each module.
 ## Module 08 — Basic Statistics for Experiments
 **Goal:** Apply basic statistics to interpret evaluation results.
 
-Topics: mean, median, variance, standard deviation, confidence intervals, p-values (intro), effect size
-AI Research Connection: Comparing model scores, determining if differences are meaningful
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_descriptive_stats | mean, median, mode (`statistics` stdlib); mean vs. median (outlier sensitivity); detecting skew by comparing mean and median | Summarizing model eval scores; spotting left-skewed distributions where rare catastrophic failures drag down the mean |
+| 02_distributions_and_spread | variance, standard deviation, range, IQR; manual variance from list comprehension; reliability labeling by std dev threshold | Two models can share the same mean but differ in reliability; high spread in safety-critical scores is a deployment risk |
+| 03_comparing_groups | null hypothesis and p-value intuition; Welch's t-statistic (manual); Cohen's d effect size; bootstrap confidence intervals (manual loop, `random.choice`) | Determining whether a score difference between prompt variants or model versions is real vs. noise; reporting effect size in research memos |
+| 04_mini_project | Load CSV with `csv.DictReader`; `stats_summary()` returning mean/median/std/reliable dict; full model scorecard; Cohen's d comparison of v1 vs v2 on synthetic eval data | End-to-end stats pipeline: load evaluation_results.csv, summarize all models, compare versions, flag unreliable models |
 
 ---
 
 ## Module 09 — Evaluation Methodology
 **Goal:** Design and run small, rigorous evaluations.
 
-Topics: task design, metrics, baselines, avoiding contamination, inter-rater agreement
-AI Research Connection: Designing evals for honesty, safety, helpfulness
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_eval_design | Eval task types (classification, ranking, open-ended scoring), rubric design, data contamination (train/test leakage, prompted-answer contamination), eval design checklist | Designing trustworthy evals for honesty, safety, and helpfulness; avoiding misleading benchmark scores |
+| 02_metrics_and_baselines | Accuracy, precision, recall, F1 (from-scratch computation); random and majority-class baselines; macro vs micro averaging (conceptual) | Measuring safety classifier performance; establishing that a model beats chance before claiming it works |
+| 03_inter_rater_agreement | Why annotator disagreement threatens eval validity; percent agreement; Cohen's kappa formula and intuition; kappa interpretation thresholds (κ > 0.6 rule) | Auditing annotation rubrics before scaling human evaluation; reporting agreement in eval methodology sections |
+| 04_mini_project | End-to-end eval pipeline: load model_outputs.json, apply heuristic rubric, compute precision/recall/F1 vs ground truth, compute majority-class baseline, write findings dict (stdlib only) | Full small-scale safety eval: from raw model outputs to a structured findings report |
 
 ---
 
