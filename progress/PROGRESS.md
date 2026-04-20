@@ -45,27 +45,45 @@ Track your progress through the curriculum here. Update this as you complete not
 
 ## Module 07 — Environments & Reproducibility
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_virtual_environments.ipynb`
+- [ ] `02_package_management.ipynb`
+- [ ] `03_seeds_and_reproducibility.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 08 — Statistics for Experiments
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_descriptive_stats.ipynb`
+- [ ] `02_distributions_and_spread.ipynb`
+- [ ] `03_comparing_groups.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 09 — Evaluation Methodology
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_eval_design.ipynb`
+- [ ] `02_metrics_and_baselines.ipynb`
+- [ ] `03_inter_rater_agreement.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 10 — Model Output Analysis
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_loading_and_inspecting.ipynb`
+- [ ] `02_per_model_analysis.ipynb`
+- [ ] `03_heuristics_and_patterns.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 11 — Prompt/Output Datasets
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_dataset_structure.ipynb`
+- [ ] `02_sampling_strategies.ipynb`
+- [ ] `03_versioning_and_formats.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 12 — Safety-Oriented Evaluation
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_rule_based_classifiers.ipynb`
+- [ ] `02_precision_recall_tradeoff.ipynb`
+- [ ] `03_evaluating_classifiers.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 13 — Error Analysis
 

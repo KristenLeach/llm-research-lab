@@ -27,12 +27,12 @@ Every module connects Python skills back to concrete research engineering tasks.
 | 04 | NumPy & Pandas Basics | ✅ Full |
 | 05 | Plotting & Exploratory Analysis | ✅ Full |
 | 06 | Writing Reusable Scripts | ✅ Full |
-| 07 | Environments, Dependencies, Reproducibility | 🔲 Scaffold |
-| 08 | Basic Statistics for Experiments | 🔲 Scaffold |
-| 09 | Evaluation Methodology | 🔲 Scaffold |
-| 10 | Analysis of Model Outputs | 🔲 Scaffold |
-| 11 | Prompt/Output Datasets | 🔲 Scaffold |
-| 12 | Safety-Oriented Classification & Evaluation | 🔲 Scaffold |
+| 07 | Environments, Dependencies, Reproducibility | ✅ Full |
+| 08 | Basic Statistics for Experiments | ✅ Full |
+| 09 | Evaluation Methodology | ✅ Full |
+| 10 | Analysis of Model Outputs | ✅ Full |
+| 11 | Prompt/Output Datasets | ✅ Full |
+| 12 | Safety-Oriented Classification & Evaluation | ✅ Full |
 | 13 | Error Analysis | 🔲 Scaffold |
 | 14 | Research-Style Coding Habits | 🔲 Scaffold |
 | 15 | Research Memos from Findings | 🔲 Scaffold |

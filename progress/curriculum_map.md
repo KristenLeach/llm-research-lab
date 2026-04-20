@@ -78,48 +78,72 @@ Detailed learning objectives and scope for each module.
 ## Module 07 — Environments, Dependencies, Reproducibility
 **Goal:** Understand how Python environments work; make work reproducible.
 
-Topics: venv, uv, pyproject.toml, pinning versions, seeds for randomness, README-driven reproducibility
-AI Research Connection: Sharing experiments, reproducing results, avoiding "works on my machine" problems
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_virtual_environments | venv isolation, uv venv, python -m venv, activate/deactivate, sys.executable, importlib.metadata | Understanding why experiment environments must be isolated |
+| 02_package_management | uv pip install, pip install, version specifiers (==, >=, ~=), requirements.txt, uv pip freeze, pyproject.toml overview | Pinning exact dependencies so results can be reproduced |
+| 03_seeds_and_reproducibility | random.seed(), np.random.seed(), default_rng(), SEED constant, limits of seeding (GPU, APIs) | Making stochastic code deterministic: train/test splits, sampling, weight initialization |
+| 04_mini_project | analyze_scores.py with seeds, requirements.txt, REPRODUCE.md, two-run identity check | Full reproducible experiment scaffold matching real AI research practices |
 
 ---
 
 ## Module 08 — Basic Statistics for Experiments
 **Goal:** Apply basic statistics to interpret evaluation results.
 
-Topics: mean, median, variance, standard deviation, confidence intervals, p-values (intro), effect size
-AI Research Connection: Comparing model scores, determining if differences are meaningful
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_descriptive_stats | mean, median, mode (`statistics` stdlib); mean vs. median (outlier sensitivity); detecting skew by comparing mean and median | Summarizing model eval scores; spotting left-skewed distributions where rare catastrophic failures drag down the mean |
+| 02_distributions_and_spread | variance, standard deviation, range, IQR; manual variance from list comprehension; reliability labeling by std dev threshold | Two models can share the same mean but differ in reliability; high spread in safety-critical scores is a deployment risk |
+| 03_comparing_groups | null hypothesis and p-value intuition; Welch's t-statistic (manual); Cohen's d effect size; bootstrap confidence intervals (manual loop, `random.choice`) | Determining whether a score difference between prompt variants or model versions is real vs. noise; reporting effect size in research memos |
+| 04_mini_project | Load CSV with `csv.DictReader`; `stats_summary()` returning mean/median/std/reliable dict; full model scorecard; Cohen's d comparison of v1 vs v2 on synthetic eval data | End-to-end stats pipeline: load evaluation_results.csv, summarize all models, compare versions, flag unreliable models |
 
 ---
 
 ## Module 09 — Evaluation Methodology
 **Goal:** Design and run small, rigorous evaluations.
 
-Topics: task design, metrics, baselines, avoiding contamination, inter-rater agreement
-AI Research Connection: Designing evals for honesty, safety, helpfulness
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_eval_design | Eval task types (classification, ranking, open-ended scoring), rubric design, data contamination (train/test leakage, prompted-answer contamination), eval design checklist | Designing trustworthy evals for honesty, safety, and helpfulness; avoiding misleading benchmark scores |
+| 02_metrics_and_baselines | Accuracy, precision, recall, F1 (from-scratch computation); random and majority-class baselines; macro vs micro averaging (conceptual) | Measuring safety classifier performance; establishing that a model beats chance before claiming it works |
+| 03_inter_rater_agreement | Why annotator disagreement threatens eval validity; percent agreement; Cohen's kappa formula and intuition; kappa interpretation thresholds (κ > 0.6 rule) | Auditing annotation rubrics before scaling human evaluation; reporting agreement in eval methodology sections |
+| 04_mini_project | End-to-end eval pipeline: load model_outputs.json, apply heuristic rubric, compute precision/recall/F1 vs ground truth, compute majority-class baseline, write findings dict (stdlib only) | Full small-scale safety eval: from raw model outputs to a structured findings report |
 
 ---
 
 ## Module 10 — Analysis of Model Outputs
 **Goal:** Load, inspect, and analyze batches of model responses.
 
-Topics: loading output files, computing statistics, identifying patterns, flagging heuristics
-AI Research Connection: Analyzing real LLM output datasets
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_loading_and_inspecting | json.load, list comprehensions, flag_rate, unique model list | First-pass inspection of a batch of model outputs |
+| 02_per_model_analysis | pd.DataFrame, groupby, .size(), .mean(), .round(), per-model stats | Comparing flag rates and response lengths across model versions |
+| 03_heuristics_and_patterns | str.contains, short-response filter, sort_values, boolean indexing | Building fast imperfect rules to surface suspicious outputs |
+| 04_mini_project | End-to-end: overall_stats, model_scorecard, pattern finding, findings dict | Full analysis pipeline from raw JSON to structured research findings |
 
 ---
 
 ## Module 11 — Prompt/Output Datasets
 **Goal:** Create and manage small datasets of prompts and model outputs.
 
-Topics: dataset structure, annotation schemas, versioning, sampling strategies
-AI Research Connection: Building eval datasets, annotation workflows
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_dataset_structure | Annotation schemas, JSONL format, json.dumps/loads, write/read JSONL | Defining and building structured eval dataset entries |
+| 02_sampling_strategies | random.sample, stratified sampling by category, adversarial examples | Building representative, diverse eval sets that probe model weaknesses |
+| 03_versioning_and_formats | JSON↔JSONL↔CSV conversion, csv.DictWriter/DictReader, dataset cards | Packaging and documenting datasets for reproducible research |
+| 04_mini_project | Full dataset: schema → 9+ entries → JSONL → dataset card | End-to-end eval dataset creation matching real AI safety lab practices |
 
 ---
 
 ## Module 12 — Safety-Oriented Classification & Evaluation
 **Goal:** Apply classification logic to safety-relevant model outputs.
 
-Topics: rule-based classifiers, keyword matching, threshold tuning, precision/recall
-AI Research Connection: Detecting harmful content, jailbreaks, misinformation
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_rule_based_classifiers | Keyword trigger lists, flag_response(), confusion matrix (TP/FP/FN/TN) | Building auditable first-line safety filters for model outputs |
+| 02_precision_recall_tradeoff | Precision, recall, F1 formulas; asymmetric costs of FP vs FN in safety | Reasoning about over- vs under-flagging tradeoffs in deployment |
+| 03_evaluating_classifiers | classifier v1 vs v2 comparison, accuracy caveat, which is better for safety | Systematic classifier evaluation to choose the right safety threshold |
+| 04_mini_project | compute_metrics() helper, both classifiers, comparison dict, findings summary | Full safety classifier pipeline: build → evaluate → compare → report |
 
 ---
 
