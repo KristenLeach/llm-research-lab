@@ -146,7 +146,7 @@ check_equal("my_answer", expected_value, label="Exercise 1")
 ## Running Tests
 
 ```bash
-uv run pytest tests/
+uv run pytest
 ```
 
 ---
