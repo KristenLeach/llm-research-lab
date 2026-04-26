@@ -12,7 +12,7 @@ dependencies = [
     "notebook>=7.5.5",
     "numpy>=2.4.4",
     "pandas>=3.0.2",
-    "matplotlib>=3.8",
+    "matplotlib>=3.10.9",
     "seaborn>=0.13",
     "scipy>=1.11",
 ]
