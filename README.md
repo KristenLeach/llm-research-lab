@@ -33,9 +33,9 @@ Every module connects Python skills back to concrete research engineering tasks.
 | 10 | Analysis of Model Outputs | ✅ Full |
 | 11 | Prompt/Output Datasets | ✅ Full |
 | 12 | Safety-Oriented Classification & Evaluation | ✅ Full |
-| 13 | Error Analysis | 🔲 Scaffold |
-| 14 | Research-Style Coding Habits | 🔲 Scaffold |
-| 15 | Research Memos from Findings | 🔲 Scaffold |
+| 13 | Error Analysis | ✅ Full |
+| 14 | Research-Style Coding Habits | ✅ Full |
+| 15 | Research Memos from Findings | ✅ Full |
 
 See [progress/curriculum_map.md](progress/curriculum_map.md) for detailed learning objectives.
 

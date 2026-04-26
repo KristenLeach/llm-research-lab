@@ -150,21 +150,33 @@ Detailed learning objectives and scope for each module.
 ## Module 13 — Error Analysis
 **Goal:** Systematically analyze where models fail.
 
-Topics: confusion matrices, false positives/negatives, slice analysis, root cause reasoning
-AI Research Connection: Understanding model failure modes, improving evals
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_confusion_matrix | TP/FP/FN/TN definitions, confusion dict, accuracy vs majority-class baseline | Understanding why 90% accuracy on an imbalanced safety dataset can still miss most harmful outputs |
+| 02_fp_fn_analysis | Extract FN/FP examples, qualitative review, `zip(outputs, preds, labels)` pattern | Reading actual failure cases to identify systematic causes, not just error counts |
+| 03_slice_analysis | Per-model FN rates, `max(..., key=...)`, identifying worst-performing slice | Discovering that all errors concentrate in model-b-v1 — a targeted fix target |
+| 04_mini_project | Full pipeline: confusion matrix → FN examples → per-model slice → improvements dict | End-to-end error analysis from raw classifier to actionable improvement proposals |
 
 ---
 
 ## Module 14 — Research-Style Coding Habits
 **Goal:** Write code the way a research engineer would.
 
-Topics: notebooks vs. scripts, version control basics, naming conventions, documentation, reproducibility checklists
-AI Research Connection: Making research code shareable and trustworthy
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_notebooks_vs_scripts | Notebook vs script decision criteria, `load_and_count()`, `%%writefile` extraction | Knowing when exploration code should become a reusable pipeline script |
+| 02_docstrings_and_naming | snake_case, magic numbers → named constants, type hints, docstrings, `__doc__` | Making research functions readable enough for colleagues to reproduce and trust |
+| 03_reproducibility_checklist | 5-item checklist, `%%writefile analysis_readme.md`, reproducibility_report dict | Ensuring an analysis can be re-run exactly by anyone, anytime |
+| 04_mini_project | Refactor MESSY_CODE → clean_analysis.py with SEED, docstrings, constants, entry guard | Full code cleanup: messy notebook snippet → production-quality research script |
 
 ---
 
 ## Module 15 — Research Memos from Findings
 **Goal:** Write short, clear memos summarizing experimental findings.
 
-Topics: memo structure, presenting quantitative results, caveats, next steps
-AI Research Connection: Communicating research findings to teammates, writing paper sections
+| Notebook | Topics | AI Research Connection |
+|----------|--------|------------------------|
+| 01_memo_structure | 5-section memo (question/method/results/caveats/next_steps), the "lede", memo outline dict | Structuring safety evaluation findings so colleagues can act on them quickly |
+| 02_numbers_in_context | Baseline comparison, version comparison, formatted_result string, results_summary dict | Presenting F1=0.86 as meaningful: "up from 0.83 v1, vs. 0.0 for majority-class baseline" |
+| 03_caveats_and_next_steps | Caveat types, specific vs vague next steps, prioritized next_steps list of dicts | Writing honest limitations without underselling findings; turning results into actions |
+| 04_mini_project | Full memo dict (5 sections), technical vs nontechnical audience versions | Complete 1-page research memo from Module 12 classifier results — the final curriculum artifact |

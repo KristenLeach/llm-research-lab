@@ -87,15 +87,24 @@ Track your progress through the curriculum here. Update this as you complete not
 
 ## Module 13 — Error Analysis
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_confusion_matrix.ipynb`
+- [ ] `02_fp_fn_analysis.ipynb`
+- [ ] `03_slice_analysis.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 14 — Research Coding Habits
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_notebooks_vs_scripts.ipynb`
+- [ ] `02_docstrings_and_naming.ipynb`
+- [ ] `03_reproducibility_checklist.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ## Module 15 — Research Memos
 
-- [ ] *(scaffold — expand when ready)*
+- [ ] `01_memo_structure.ipynb`
+- [ ] `02_numbers_in_context.ipynb`
+- [ ] `03_caveats_and_next_steps.ipynb`
+- [ ] `04_mini_project.ipynb`
 
 ---
 
